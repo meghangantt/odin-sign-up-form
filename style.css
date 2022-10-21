@@ -1,14 +1,62 @@
+:root {
+    --white: rgb(249, 249, 252);
+    background-color: var(--white);
+}
+
 .page {
     display: flex;
     width: 100vw;
 }
 
-div:last-child {
-    background-color: lightgray;
-    width: 100%;
+.left-side {
+    width: 30vw;
+    height: 100vh;
+    text-align: center;
 }
 
-img {
-    width: auto;
+.left-side > div {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.402);
+    position: absolute;
+    top: 20vh;
+    width: 30vw;
+    font-size: calc(16px + 4vmax);
+}
+
+.left-side > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-side > p {
+    position: absolute;
+    top: 95vh;
+    width: 30vw;
+}
+
+.right-side {
+    width: 70vw;
     height: 100vh;
+}
+
+.right-side > * {
+    position: relative;
+}
+
+.right-side > p:first-child {
+    top: 10%;
+}
+
+.right-side > fieldset {
+    width: 100%;
+    top: 23%;
+}
+
+.right-side > button {
+    top: 30%;
+}
+
+.right-side > p:last-child {
+    top: 30%;
 }

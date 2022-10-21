@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    width: 100vw;
+}
+
+div:last-child {
+    background-color: lightgray;
+    width: 100%;
+}
+
+img {
+    width: auto;
+    height: 100vh;
+}

@@ -16,7 +16,8 @@
 
 .left-side > div {
     color: var(--white);
-    background-color: rgba(0, 0, 0, 0.402);
+    background-color: rgb(65, 65, 65);
+    opacity: .7;
     position: absolute;
     top: 20vh;
     width: 30vw;
@@ -36,8 +37,9 @@
 }
 
 .right-side {
-    width: 70vw;
+    width: 65vw;
     height: 100vh;
+    margin-left: 5vw;
 }
 
 .right-side > * {

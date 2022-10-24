@@ -36,9 +36,9 @@
     justify-content: center;
     gap: 5%;
     position: absolute;
-    top: 22.5vh;
+    top: 26vh;
     width: 30vw;
-    height: calc(20px + 4vmax);
+    height: calc(25px + 4vmax);
     font-family: 'Satisfy', cursive;
 }
 
@@ -85,7 +85,9 @@
     left: var(--right-indent);
 }
 
-.right-side > p:first-child {
+.right-side > p:first-child,
+.right-side > fieldset > p {
+    font-size: 18px;
 }
 
 .right-side > fieldset {
@@ -122,12 +124,17 @@
 .right-side > fieldset > .row > div > input {
     border: 1px solid gray;
     border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .right-side > fieldset > .row > div > input:focus {
     outline: 1px solid lightsteelblue;
     border-radius: 3px;
     box-shadow: 2px 2px 5px lightsteelblue;
+}
+
+.right-side > fieldset > .row > div > input:invalid {
+    background-color: rgba(255, 160, 122, 0.381);
 }
 
 .right-side > button {
@@ -139,6 +146,10 @@
     border: 1px solid rgb(174, 106, 42);
     border-radius: 4px;
     box-shadow: 2px 2px 4px lightgrey;
+}
+
+.right-side > button:hover {
+    background-color: rgb(174, 106, 42);
 }
 
 .right-side > p:last-child > a{

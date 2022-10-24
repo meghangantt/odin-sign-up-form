@@ -2,9 +2,10 @@
 
 :root {
     --white: rgb(252, 252, 249);
-    --dark-gray: rgb(35, 34, 33);
-    background-color: var(--white);
+    --dark-gray: rgba(35, 34, 33, 0.89);
+    background-color: rgb(238, 236, 233);
     --main-font-fam: 'Open Sans', sans-serif;
+    --right-indent: max(4vw, 10px);
 }
 
 .page {
@@ -25,7 +26,7 @@
     position: absolute;
     top: 20vh;
     width: 30vw;
-    font-size: calc(16px + 4vmax);
+    font-size: calc(12px + 2vmax);
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -37,15 +38,19 @@
 
 .left-side > p {
     position: absolute;
-    top: 95vh;
+    bottom: 0vh;
     width: 30vw;
     font-family: var(--main-font-fam);
     color: var(--white);
-    opacity: 90%;
+    opacity: 60%;
+}
+
+.left-side > p > a {
+    color: var(--white);
 }
 
 .right-side {
-    width: 65vw;
+    width: calc(65vw - var(--right-indent));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,20 +59,36 @@
     color: var(--dark-gray);
 }
 
+.right-side > p,
+.right-side > button {
+    position: relative;
+    left: var(--right-indent);
+}
+
 .right-side > p:first-child {
 }
 
 .right-side > fieldset {
-    padding: 0;
+    padding: 0 0 3vh var(--right-indent);
+    margin: 4vh 0 4vh 0;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border: none;
+    margin-inline-start: 0px;
+    gap: min(10px, 1vh);
+    background-color: var(--white);
+    color: darkslategray;
+    box-shadow: 2px 5px 10px lightgray;
 }
 
 .right-side > fieldset > .row {
     font-family: 'DM Sans', sans-serif;
+    font-size: calc(10px + .2vmax);
     display: flex;
     width: 100%;
+    gap: 3%;
 }
 
 .right-side > fieldset > .row > div {
@@ -78,8 +99,15 @@
 
 .right-side > button {
     font-family: var(--main-font-fam);
+    width: max(120px, 15vw);
+    height: max(30px, 5vh);
+    color: var(--white);
+    background-color: rgb(200, 115, 54);
+    border: 1px solid rgb(174, 106, 42);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px lightgrey;
 }
 
-.right-side > p:last-child {
-
+.right-side > p:last-child > a{
+    color: rgb(174, 106, 42);
 }

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:ital@0;1&family=Playfair+Display+SC&display=swap');
+
 :root {
     --white: rgb(249, 249, 252);
     background-color: var(--white);
+    --main-font-fam: 'Open Sans', sans-serif;
 }
 
 .page {
@@ -22,6 +25,7 @@
     top: 20vh;
     width: 30vw;
     font-size: calc(16px + 4vmax);
+    font-family: 'Playfair Display SC', serif;
 }
 
 .left-side > img {
@@ -34,31 +38,29 @@
     position: absolute;
     top: 95vh;
     width: 30vw;
+    font-family: var(--main-font-fam);
+    
 }
 
 .right-side {
     width: 65vw;
     height: 100vh;
-    margin-left: 5vw;
-}
-
-.right-side > * {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font-fam);
 }
 
 .right-side > p:first-child {
-    top: 10%;
 }
 
 .right-side > fieldset {
-    width: 100%;
-    top: 23%;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .right-side > button {
-    top: 30%;
+    font-family: var(--main-font-fam);
 }
 
 .right-side > p:last-child {
-    top: 30%;
+
 }

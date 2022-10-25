@@ -80,17 +80,17 @@
 }
 
 .right-side > p,
-.right-side > button {
+.right-side > form > button {
     position: relative;
     left: var(--right-indent);
 }
 
 .right-side > p:first-child,
-.right-side > fieldset > p {
+.right-side > form > fieldset > p {
     font-size: 18px;
 }
 
-.right-side > fieldset {
+.right-side > form > fieldset {
     padding: 0 0 3vh var(--right-indent);
     margin: 4vh 0 4vh 0;
     width: 65vw;
@@ -107,7 +107,7 @@
     
 }
 
-.right-side > fieldset > .row {
+.right-side > form > fieldset > .row {
     font-family: 'DM Sans', sans-serif;
     font-size: calc(10px + .2vmax);
     display: flex;
@@ -115,29 +115,29 @@
     gap: 3%;
 }
 
-.right-side > fieldset > .row > div {
+.right-side > form > fieldset > .row > div {
     display: flex;
     flex-direction: column;
     width: max(160px, 20vw);
 }
 
-.right-side > fieldset > .row > div > input {
+.right-side > form > fieldset > .row > div > input {
     border: 1px solid gray;
     border-radius: 3px;
     font-family: 'DM Sans', sans-serif;
 }
 
-.right-side > fieldset > .row > div > input:focus {
+.right-side > form > fieldset > .row > div > input:focus {
     outline: 1px solid lightsteelblue;
     border-radius: 3px;
     box-shadow: 2px 2px 5px lightsteelblue;
 }
 
-.right-side > fieldset > .row > div > input:invalid {
+.right-side > form > fieldset > .row > div > input:invalid {
     background-color: rgba(255, 160, 122, 0.381);
 }
 
-.right-side > button {
+.right-side > form > button {
     font-family: var(--main-font-fam);
     width: max(120px, 15vw);
     height: max(30px, 5vh);
@@ -148,7 +148,7 @@
     box-shadow: 2px 2px 4px lightgrey;
 }
 
-.right-side > button:hover {
+.right-side > form > button:hover {
     background-color: rgb(174, 106, 42);
 }
 

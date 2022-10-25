@@ -2,7 +2,7 @@
 
 :root {
     --white: rgb(249, 252, 252);
-    --main-font-fam: 'Open Sans', sans-serif;
+    --main-font-fam: 'DM Sans', sans-serif;
     --right-indent: max(4vw, 10px);
     background-color: rgb(233, 237, 238);
 }
@@ -15,6 +15,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
+    font-family: var(--main-font-fam);
 }
 
 .left-side {
@@ -60,7 +61,6 @@
     position: absolute;
     bottom: 0vh;
     width: 30vw;
-    font-family: var(--main-font-fam);
     color: var(--white);
     opacity: 60%;
 }
@@ -75,7 +75,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: var(--main-font-fam);
     color: rgb(37, 40, 46);
 }
 
@@ -108,7 +107,6 @@
 }
 
 .right-side > form > fieldset > .row {
-    font-family: 'DM Sans', sans-serif;
     font-size: calc(10px + .2vmax);
     display: flex;
     width: 100%;
@@ -124,7 +122,7 @@
 .right-side > form > fieldset > .row > div > input {
     border: 1px solid gray;
     border-radius: 3px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--main-font-fam);
 }
 
 .right-side > form > fieldset > .row > div > input:focus {
@@ -138,7 +136,6 @@
 }
 
 .right-side > form > button {
-    font-family: var(--main-font-fam);
     width: max(120px, 15vw);
     height: max(30px, 5vh);
     color: var(--white);
